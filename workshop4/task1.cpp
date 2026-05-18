@@ -33,4 +33,6 @@ signed main() // На литкоде зашла, Тесты оттуда же
     assert(lengthOfLIS(nums1) == 4);
     assert(lengthOfLIS(nums2) == 4);
     assert(lengthOfLIS(nums3) == 1);
+    
+    cout << "Тесты пройдены" << endl;
 }
