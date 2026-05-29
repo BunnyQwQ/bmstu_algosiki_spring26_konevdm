@@ -23,8 +23,8 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
         auto [x, y] = q.front();
         q.pop();
         for (int i = 0; i < 4; i++) {
-            int nx = x + d[i];
-            int ny = y + d[i];
+            int nx = x + d[i][0];
+            int ny = y + d[i][1];
             if (nx >= 0 && nx < m && ny >= 0 && ny < n) {
                 if (dist[nx][ny] > dist[x][y] + 1) {
                     dist[nx][ny] = dist[x][y] + 1;
